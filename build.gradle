@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+
+description = 'Projeto faculdade, segunda aula sobre java'
+    group = 'com.spacelevelup'
+
+mainClassName = 'com.spacelevelup.Aula02grandle.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+}
