@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
 package com.spacelevelup.Aula02grandle;
+import com.spacelevelup.Aula02grandle.form.frmAula02;
 
 /**
  *
@@ -16,6 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        frmAula02 teste = new frmAula02();
     }
     
 }

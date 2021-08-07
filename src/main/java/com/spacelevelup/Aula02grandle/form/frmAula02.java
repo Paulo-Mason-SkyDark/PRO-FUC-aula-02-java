@@ -27,9 +27,10 @@ public class frmAula02 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        jExecutar = new javax.swing.JButton();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
@@ -50,20 +51,27 @@ public class frmAula02 extends javax.swing.JFrame {
         getContentPane().add(jTextField1);
         jTextField1.setBounds(80, 80, 250, 20);
 
-        jButton1.setText("Executar");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.gray));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jExecutar.setText("Executar");
+        jExecutar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.darkGray, java.awt.Color.darkGray, java.awt.Color.gray));
+        jExecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jExecutarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1);
-        jButton1.setBounds(80, 110, 250, 19);
+        getContentPane().add(jExecutar);
+        jExecutar.setBounds(80, 110, 250, 19);
 
+        buttonGroup.add(jRadioButton1);
         jRadioButton1.setText("Feminino");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jRadioButton1);
         jRadioButton1.setBounds(80, 180, 67, 23);
 
+        buttonGroup.add(jRadioButton2);
         jRadioButton2.setText("Masculino");
         jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +80,6 @@ public class frmAula02 extends javax.swing.JFrame {
         });
         getContentPane().add(jRadioButton2);
         jRadioButton2.setBounds(80, 150, 71, 23);
-        jRadioButton2.getAccessibleContext().setAccessibleParent(null);
 
         jLabel2.setText("Resultado");
         getContentPane().add(jLabel2);
@@ -85,14 +92,24 @@ public class frmAula02 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExecutarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        jLabel2.setText(jTextField1.getText());
+    }//GEN-LAST:event_jExecutarActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
         // TODO add your handling code here:
+        jLabel2.setText(jRadioButton2.getText());
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+                jLabel2.setText("Amo você lee");
+
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -129,7 +146,8 @@ public class frmAula02 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.ButtonGroup buttonGroup;
+    private javax.swing.JButton jExecutar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JRadioButton jRadioButton1;
