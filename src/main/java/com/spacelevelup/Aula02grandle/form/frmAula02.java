@@ -31,9 +31,9 @@ public class frmAula02 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jExecutar = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
+        jRadioFemenino = new javax.swing.JRadioButton();
+        jRadioMasculino = new javax.swing.JRadioButton();
+        jLabelResult = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -61,29 +61,29 @@ public class frmAula02 extends javax.swing.JFrame {
         getContentPane().add(jExecutar);
         jExecutar.setBounds(80, 110, 250, 19);
 
-        buttonGroup.add(jRadioButton1);
-        jRadioButton1.setText("Feminino");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup.add(jRadioFemenino);
+        jRadioFemenino.setText("Feminino");
+        jRadioFemenino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                jRadioFemeninoActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton1);
-        jRadioButton1.setBounds(80, 180, 67, 23);
+        getContentPane().add(jRadioFemenino);
+        jRadioFemenino.setBounds(80, 180, 67, 23);
 
-        buttonGroup.add(jRadioButton2);
-        jRadioButton2.setText("Masculino");
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup.add(jRadioMasculino);
+        jRadioMasculino.setText("Masculino");
+        jRadioMasculino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                jRadioMasculinoActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton2);
-        jRadioButton2.setBounds(80, 150, 71, 23);
+        getContentPane().add(jRadioMasculino);
+        jRadioMasculino.setBounds(80, 150, 71, 23);
 
-        jLabel2.setText("Resultado");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(90, 260, 140, 14);
+        jLabelResult.setText("Resultado");
+        getContentPane().add(jLabelResult);
+        jLabelResult.setBounds(90, 260, 140, 14);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,19 +94,19 @@ public class frmAula02 extends javax.swing.JFrame {
 
     private void jExecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jExecutarActionPerformed
         // TODO add your handling code here:
-        jLabel2.setText(jTextField1.getText());
+        jLabelResult.setText("Olá, " + jTextField1.getText());
     }//GEN-LAST:event_jExecutarActionPerformed
 
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+    private void jRadioMasculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioMasculinoActionPerformed
         // TODO add your handling code here:
-        jLabel2.setText(jRadioButton2.getText());
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
+        jLabelResult.setText(jRadioMasculino.getText());
+    }//GEN-LAST:event_jRadioMasculinoActionPerformed
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    private void jRadioFemeninoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioFemeninoActionPerformed
         // TODO add your handling code here:
-                jLabel2.setText("Amo você lee");
+                jLabelResult.setText("Feminino");
 
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_jRadioFemeninoActionPerformed
 
     
     
@@ -149,9 +149,9 @@ public class frmAula02 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup;
     private javax.swing.JButton jExecutar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JLabel jLabelResult;
+    private javax.swing.JRadioButton jRadioFemenino;
+    private javax.swing.JRadioButton jRadioMasculino;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
